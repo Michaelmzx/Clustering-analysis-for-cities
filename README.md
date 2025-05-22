@@ -3,25 +3,6 @@
 This repository contains R code for model‐based clustering of univariate functional data. It implements smoothing, descriptive analysis, outlier detection, and two clustering approaches (Funclust and funHDDC) on three socio–economic indicators (average income, proportion of skilled population, and unemployment rate) from four different scenarios.
 
 ---
-
-## 📂 Repository Structure
-
-/
-├── R/
-│ ├── funclust.r # Main R interface to the Funclust C++ backend
-│ ├── cpp_data.R # Helper: convert R data to C++ structures
-│ ├── input.R # Data‐loading and preprocessing functions
-│ ├── output.R # Result‐export functions
-│ └── README.md # (this file)
-│
-│
-├── data/
-│ ├── baseline_average_income.csv
-│ ├── ct_average_income.csv
-│ ├── tc_average_income.csv
-│ └── ts_average_income.csv
-│
-└── 
 ---
 
 ## 🔧 Dependencies
@@ -33,11 +14,9 @@ This repository contains R code for model‐based clustering of univariate funct
   - funHDDC  
   - robustbase (for fbplot)  
 
-Install required packages with:
-
-```r
+Install required packages:
 install.packages(c("Rcpp", "fda", "funHDDC", "robustbase"))
-⚙️ Installation & Compilation
+⚙ Installation & Compilation
 Clone the repository
 git clone https://github.com/Michaelmzx/Clustering-analysis-for-cities.git
 
@@ -54,7 +33,7 @@ source("R/funclust.r")
 source("R/cpp_data.R")
 source("R/input.R")
 source("R/output.R")
-▶️ Usage
+ Usage
 Load and merge data
 
 base_avg <- read.csv("data/baseline_average_income.csv", header = TRUE)
@@ -95,8 +74,8 @@ For the full workflow and additional plots (P.O.S & unemployment rate; K = 2, 3,
 
 
 
-📄 License
+ License
 Released under the MIT License. See LICENSE for details.
 
-🙋 Contact
+ Contact
 For questions or bug reports, open an Issue or contact Minzhen at mmmxi@leeds.ac.uk.
