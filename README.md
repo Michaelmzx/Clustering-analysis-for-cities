@@ -5,7 +5,7 @@ This repository contains R code for model‐based clustering of univariate funct
 ---
 ---
 
-## 🔧 Dependencies
+##  Dependencies
 
 - **R** (≥ 4.0)  
 - **R packages**  
@@ -16,7 +16,7 @@ This repository contains R code for model‐based clustering of univariate funct
 
 Install required packages:
 install.packages(c("Rcpp", "fda", "funHDDC", "robustbase"))
-⚙ Installation & Compilation
+Installation & Compilation
 Clone the repository
 git clone https://github.com/Michaelmzx/Clustering-analysis-for-cities.git
 
