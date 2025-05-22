@@ -30,9 +30,16 @@ sourceCpp("src/mfpca.cpp")
 Load R code
 
 source("R/funclust.r")
+
+
 source("R/cpp_data.R")
+
+
 source("R/input.R")
+
+
 source("R/output.R")
+
  Usage
 Load and merge data
 
